@@ -9,7 +9,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post("/api/contact", async (req, res) => {
+app.get("/", async (req, res) => {
+  res.send("hello")
+});
+app.post("/", async (req, res) => {
   const { name, email, message } = req.body;
   console.log("Received data:", { name, email, message });
 

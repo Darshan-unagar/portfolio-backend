@@ -5,7 +5,11 @@ const nodemailer = require("nodemailer");
 const app = express();
 const port = 3000;
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://darshanunagar.vercel.app',
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

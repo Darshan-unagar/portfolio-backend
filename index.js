@@ -31,7 +31,7 @@ app.post("/", async (req, res) => {
       service: "Gmail",
       auth: {
         user: "darshanunagarcode15@gmail.com",
-        pass: "uscf zncw ohsd nzsp",
+        pass: "ilvo zwnt dfpb xgcy",
       },
     });
 
